@@ -10,7 +10,7 @@ nav {
 A cor do primeiro plano ou da fonte será branca. A exibição padrão mudará de inline para bloco. Cada tag âncora terá padding de 20px;*/
 
 nav a {
-    background-color: white;
+    color: white;
     display: block;
     padding: 20px;
 }
@@ -27,7 +27,7 @@ uma largura definida com uma altura que será ajustada dinamicamente para se ade
 o tipo de borda e a cor dela. Padding (ou preenchimento) entre a imagem e a borda. Uma sombra de caixa ao redor da borda da imagem com zero de deslocamento e profundidade de 30px em cinza.*/
 
 img {
-    width: 50px;
+    width: 200px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
