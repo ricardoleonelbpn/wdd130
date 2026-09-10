@@ -1,0 +1,42 @@
+/*Esta regra de CSS nomeia o elemento <nav > como o elemento selecionado para aplicar duas declarações de estilo. A cor de fundo será "azul-escuro",
+que é uma cor válida e nomeada. O padding, ou preenchimento entre o conteúdo e a borda, é definido como 10 pixels para facilitar a leitura.*/
+
+nav {
+    background-color: darkblue;
+    padding: 10px;
+}
+
+/*Esta regra de CSS seleciona todos os elementos <a > (âncora/link) no HTML que são filhos do elemento <nav > e aplica as seguintes declarações: 
+A cor do primeiro plano ou da fonte será branca. A exibição padrão mudará de inline para bloco. Cada tag âncora terá padding de 20px;*/
+
+nav a {
+    background-color: white;
+    display: block;
+    padding: 20px;
+}
+
+/*Esta regra de CSS faz referência ao elemento <h1 > (título 1) como o elemento selecionado e aplica a seguinte declaração: 
+A cor da fonte em primeiro plano está definida como azul-escuro.*/
+
+h1 {
+    color: darkblue;
+}
+
+/*Esta regra de CSS faz referência a todos os elementos <img > (imagem) como o seletor e aplica as seguintes declarações: 
+uma largura definida com uma altura que será ajustada dinamicamente para se adequar à proporção da imagem. Um atalho de borda que nomeia a largura,
+o tipo de borda e a cor dela. Padding (ou preenchimento) entre a imagem e a borda. Uma sombra de caixa ao redor da borda da imagem com zero de deslocamento e profundidade de 30px em cinza.*/
+
+img {
+    width: 50px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+/*Esta regra de CSS seleciona todos os elementos <p > (parágrafo) como seletor e aplica a seguinte declaração: 
+O padding entre o conteúdo do parágrafo e a borda é definido como 10 pixels.*/
+
+p {
+    padding: 10px;
+}
