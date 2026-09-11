@@ -23,6 +23,7 @@ header {
 main {
     margin: 0 auto;
     width: 600px;
+    height: auto;
 }
 
 h1 {
@@ -32,11 +33,11 @@ h1 {
 
 picture {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 img {
-    width: 600px;
+    width: 580px;
     height: auto;
 }
 
