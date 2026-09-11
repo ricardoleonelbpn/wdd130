@@ -1,3 +1,7 @@
+main {
+    max-width: 840px;
+}
+
 /*Esta regra de CSS nomeia o elemento <nav > como o elemento selecionado para aplicar duas declarações de estilo. A cor de fundo será "azul-escuro",
 que é uma cor válida e nomeada. O padding, ou preenchimento entre o conteúdo e a borda, é definido como 10 pixels para facilitar a leitura.*/
 
@@ -37,6 +41,32 @@ img {
 /*Esta regra de CSS seleciona todos os elementos <p > (parágrafo) como seletor e aplica a seguinte declaração: 
 O padding entre o conteúdo do parágrafo e a borda é definido como 10 pixels.*/
 
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
 p {
-    padding: 10px;
+    padding: 0;
+}
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
 }
