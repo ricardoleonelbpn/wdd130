@@ -1,10 +1,21 @@
-main {
-    max-width: 840px;
+/* Resetar css do meu projeto */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #222;
+    background: #fff;
+    margin: 0;
 }
 
 /*Esta regra de CSS nomeia o elemento <nav > como o elemento selecionado para aplicar duas declarações de estilo. A cor de fundo será "azul-escuro",
 que é uma cor válida e nomeada. O padding, ou preenchimento entre o conteúdo e a borda, é definido como 10 pixels para facilitar a leitura.*/
-
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -24,6 +35,7 @@ A cor da fonte em primeiro plano está definida como azul-escuro.*/
 
 h1 {
     color: darkblue;
+
 }
 
 /*Esta regra de CSS faz referência a todos os elementos <img > (imagem) como o seletor e aplica as seguintes declarações: 
@@ -31,6 +43,7 @@ uma largura definida com uma altura que será ajustada dinamicamente para se ade
 o tipo de borda e a cor dela. Padding (ou preenchimento) entre a imagem e a borda. Uma sombra de caixa ao redor da borda da imagem com zero de deslocamento e profundidade de 30px em cinza.*/
 
 img {
+
     width: 200px;
     height: auto;
     border: 1px solid black;
@@ -52,17 +65,67 @@ aside {
 }
 
 aside img {
+    position: relative;
     width: 200px;
     height: auto;
 }
 
-main img {
-    width: 150px;
+.caixa {
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0 / 10%);
+    padding: 1rem;
+    background-color: #000;
+    color: #eee;
+
+}
+
+aside {
+    margin: 0;
+    border: 1px solid rgb(0, 0, 0 / 10%);
+    padding: 0;
+    width: 300px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main aside {
+    float: right;
+    clear: right;
+    width: 20rem;
     height: auto;
-    border: 1px solid steelblue;
+    border: 0;
+    padding: 2px;
+    box-shadow: 0 0 30px gray
+}
+
+aside h2 {
+    margin: 1rem;
+    border: #fff;
+    text-align: left;
+    color: #000
+}
+
+aside ul a {
+    text-align: left;
+    display: block;
+
+}
+
+main img {
+    float: right;
+    width: 20rem;
+    height: auto;
+    border: 0;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 
+}
+
+aside h3 {
+    position: relative;
+    top: 0;
+    left: 1px;
+    color: #000;
 }
 
 p {
