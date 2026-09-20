@@ -60,19 +60,19 @@ article {
     padding: 8px;
 }
 
-.socialmedia {
+.redes-socias {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
 }
 
-.socialmedia img {
+.redes-socias img {
     width: 30px;
     height: auto;
 }
 
-.socialmedia a:hover {
+.redes-socias a:hover {
     color: var(--cor-secundaria);
 }
 
