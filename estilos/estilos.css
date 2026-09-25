@@ -1,135 +1,60 @@
-/* Resetar css do meu projeto */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
-    color: #222;
-    background: #fff;
+    color: gainsboro;
+    background: darkslategrey;
     margin: 0;
 }
 
-/*Esta regra de CSS nomeia o elemento <nav > como o elemento selecionado para aplicar duas declarações de estilo. A cor de fundo será "azul-escuro",
-que é uma cor válida e nomeada. O padding, ou preenchimento entre o conteúdo e a borda, é definido como 10 pixels para facilitar a leitura.*/
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: darkslategrey;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-/*Esta regra de CSS seleciona todos os elementos <a > (âncora/link) no HTML que são filhos do elemento <nav > e aplica as seguintes declarações: 
-A cor do primeiro plano ou da fonte será branca. A exibição padrão mudará de inline para bloco. Cada tag âncora terá padding de 20px;*/
+p {
+    margin: 0;
+    padding: 0;
+}
 
 nav a {
-    color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    /* abreviação para branco */
 }
-
-/*Esta regra de CSS faz referência ao elemento <h1 > (título 1) como o elemento selecionado e aplica a seguinte declaração: 
-A cor da fonte em primeiro plano está definida como azul-escuro.*/
 
 h1 {
-    color: darkblue;
+    color: black;
+    border-bottom: 1px solid gainsboro;
 
 }
 
-/*Esta regra de CSS faz referência a todos os elementos <img > (imagem) como o seletor e aplica as seguintes declarações: 
-uma largura definida com uma altura que será ajustada dinamicamente para se adequar à proporção da imagem. Um atalho de borda que nomeia a largura,
-o tipo de borda e a cor dela. Padding (ou preenchimento) entre a imagem e a borda. Uma sombra de caixa ao redor da borda da imagem com zero de deslocamento e profundidade de 30px em cinza.*/
+aside ul a {
+    text-align: left;
+    display: block;
+    color: gainsboro;
+    text-decoration: none;
 
-img {
+}
 
-    width: 200px;
+section img {
+    float: inline-end;
+    width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 
-/*Esta regra de CSS seleciona todos os elementos <p > (parágrafo) como seletor e aplica a seguinte declaração: 
-O padding entre o conteúdo do parágrafo e a borda é definido como 10 pixels.*/
-
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-}
-
-aside img {
-    position: relative;
-    width: 200px;
-    height: auto;
-}
-
-.caixa {
-    margin: 1rem;
-    border: 1px solid rgb(0, 0, 0 / 10%);
-    padding: 1rem;
-    background-color: #000;
-    color: #eee;
-
-}
-
-aside {
-    margin: 0;
-    border: 1px solid rgb(0, 0, 0 / 10%);
-    padding: 0;
-    width: 300px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-main aside {
-    float: right;
-    clear: right;
-    width: 20rem;
-    height: auto;
-    border: 0;
-    padding: 2px;
-    box-shadow: 0 0 30px gray
-}
-
-aside h2 {
-    margin: 1rem;
-    border: #fff;
-    text-align: left;
-    color: #000
-}
-
-aside ul a {
-    text-align: left;
-    display: block;
-
-}
-
-main img {
-    float: right;
-    width: 20rem;
-    height: auto;
-    border: 0;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-
-}
-
 aside h3 {
-    position: relative;
-    text-align: center;
-    padding: 16px;
-    color: #a33939;
-}
+    position: absolute;
 
-p {
-    padding: 0;
 }
 
 footer {
