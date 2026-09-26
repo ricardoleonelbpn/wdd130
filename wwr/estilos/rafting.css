@@ -9,6 +9,7 @@
 header {
     background-color: #fff;
     color: var(--cor-segundaria);
+
 }
 
 * {
@@ -27,28 +28,41 @@ main,
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
-    text-align: center;
+    text-align: left;
 }
 
 /*organizar os elementos filhos deste header lado a lado*/
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     /*Coloca o primeiro elemento de um lado e o segundo do outro*/
     padding: 10px 20px;
+
+}
+
+nav a {
+    display: flex;
+    text-decoration: none;
+    color: #000;
+}
+
+nav a:hover {
+    color: var(--cor-secundaria);
 }
 
 header ul {
     display: flex;
     list-style: none;
     gap: 20px;
+
 }
 
 h1,
 h2 {
     font-family: var(--fonte-titulo);
-    color: var(--cor-segundaria);
+    color: var(--cor-secundaria);
     text-align: center;
 }
 
@@ -60,16 +74,17 @@ article {
     padding: 8px;
 }
 
-.redes-socias {
+.redes-sociais {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     gap: 15px;
 }
 
-.redes-socias img {
-    width: 30px;
+.redes-sociais img {
+    width: 60px;
     height: auto;
+    gap: 15px;
 }
 
 .redes-socias a:hover {
@@ -125,6 +140,13 @@ section {
     padding: 20px;
 }
 
+.cta div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    margin: 0 30px;
+}
+
 .cta {
     text-align: center;
     background-color: var(--cor-principal);
@@ -133,4 +155,13 @@ section {
 
 .cta h2 {
     color: #fff
+}
+
+.cta figure img {
+    width: 100%;
+}
+
+footer p {
+    display: flex;
+    justify-content: flex-end;
 }
