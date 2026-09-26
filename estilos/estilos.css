@@ -32,6 +32,7 @@ nav a {
 h1 {
     color: black;
     border-bottom: 1px solid gainsboro;
+    text-align: center;
 
 }
 
@@ -45,7 +46,7 @@ aside ul a {
 
 section img {
     float: inline-end;
-    width: 150px;
+    width: 13rem;
     height: auto;
     border: 1px solid black;
     padding: 2px;
@@ -57,8 +58,37 @@ aside h3 {
 
 }
 
+.grid aside img {
+    width: 20rem;
+    height: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    padding: 20px;
+}
+
+.grid main {
+    grid-column: 2;
+    grid-row: 1 / 4;
+}
+
+.grid aside {
+    grid-column: 1;
+}
+
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+
+}
+
+header,
+footer,
+.grid {
+    max-width: 840px;
+    margin: 0 auto;
 }
