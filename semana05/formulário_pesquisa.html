@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Formulário</title>
+    <link rel="stylesheet" href="estilos/formulario_pesquisa.css    ">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 | Formulário HTML - Pesquisa de Usuário</h1>
+    </header>
+    <main>
+        <form>
+            <h1>Informações de Contato</h1>
+            <div class="item-formulario coluna2">
+                <label for="nomecompleto">Nome Completo:</label>
+                <input type="text" id="nome-completo" name="nome-completo" required>
+            </div>
+            <div class="item-formulario coluna2">
+                <label for="emaildousuario">Email:</label>
+                <input type="text" id="email-do-usuario" name="email-do-usuario" required>
+            </div>
+            <h1>Perguntas</h1>
+            <div class="item-formulario coluna1">
+                <label for="navegador">Qual é o seu navegador favorito</label>
+                <select name="navegador" id="navegador">
+                    <option value="Chrome">Chrome</option>
+                    <option value="Safari">Safari</option>
+                    <option value="Edge">Edge</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+            <div class="item-formulario coluna1">
+                <label for="pet">Você tem um bichinho de estimação em casa?</label>
+                <input type="checkbox" name="pet" id="pet">
+            </div>
+            <div class="item-formulario coluna1">
+                <label for="feedback">Liste os lugares onde você morou. </label>
+                <textarea name="feedback" id="feedback"
+                  placeholder="São Paulo, Brásilia, Tocantins..." rows="4"></textarea>
+            </div>
+            <button type="submit">Enviar Pesquisa </button>
+
+        </form>
+    </main>
+    <footer>©2026 | Formulário HTML - Atividade de Pesquisa de Usuário | Ricardo Leonel</footer>
+</body>
+
+</html>
