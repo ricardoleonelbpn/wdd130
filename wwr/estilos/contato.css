@@ -227,3 +227,31 @@ main > section .cta figcaption {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+.p-mensag fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+
+.p-mensag legend {
+    width: 100px;
+    padding: 0;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 19px;
+}
+
+.opcoes-mensagem label {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.opcoes-mensagem input {
+    margin: 0 7px 0 0;
+}

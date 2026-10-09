@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fale Conosco | Rata das Corredeiras</title>
+    <title>Fale Conosco | Rota das Corredeiras</title>
 
     <meta name="author" content="Ricardo Leonel">
-    <meta name="description" content="Esta página tem como objetivo entrar em contato conosco">
+    <meta name="description"
+      content="Entre em contato com a Rota das Corredeiras para tirar dúvidas, conhecer nossos passeios de rafting e planejar sua próxima aventura.">
 
     <link rel="stylesheet" href="estilos/rafting.css">
     <link rel="stylesheet" href="estilos/contato.css">
@@ -28,7 +29,7 @@
     </header>
     <main>
         <div class="contato">
-            <h1>Companhia de Rota das Corredeiras</h1>
+            <h1>Entre em contato com a Rota das Corredeiras</h1>
             <h2>Rua Principal do Rio</h2>
             <h2>Foz do Iguaçu, Paraná</h2>
             <h2>+55 (45)99999-9999</h2>
@@ -49,26 +50,26 @@
             </div>
 
             <div class="p-mensag">
-                <div class="titulo-mensagem">
-                    <label>Propósito da Mensagem</label>
-                </div>
+                <fieldset>
+                    <legend>Propósito da Mensagem</legend>
 
-                <div class="opcoes-mensagem">
-                    <label>
-                        <input type="radio" name="pm" value="duvida">
-                        Dúvida Geral
-                    </label>
+                    <div class="opcoes-mensagem">
+                        <label for="duvida">
+                            <input type="radio" id="duvida" name="pm" value="duvida">
+                            Dúvida Geral
+                        </label>
 
-                    <label>
-                        <input type="radio" name="pm" value="pergunta">
-                        Pergunta sobre Reserva
-                    </label>
+                        <label for="pergunta">
+                            <input type="radio" id="pergunta" name="pm" value="pergunta">
+                            Pergunta sobre Reserva
+                        </label>
 
-                    <label>
-                        <input type="radio" name="pm" value="sugestao">
-                        Sugestão
-                    </label>
-                </div>
+                        <label for="sugestao">
+                            <input type="radio" id="sugestao" name="pm" value="sugestao">
+                            Sugestão
+                        </label>
+                    </div>
+                </fieldset>
             </div>
 
             <div class="mensagem">
@@ -99,7 +100,8 @@
                 </figure>
 
                 <figure>
-                    <img src="imagens/foto_perfil_instrutora.jpg" alt="Foto de Perfil da Instrutora">
+                    <img src="imagens/foto_perfil_instrutora.jpg"
+                      alt="Foto de Perfil da Instrutora">
                     <figcaption>Instrutora</figcaption>
                 </figure>
             </div>

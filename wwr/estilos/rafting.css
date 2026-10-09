@@ -33,17 +33,6 @@ footer {
     text-align: left;
 }
 
-/*organizar os elementos filhos deste header lado a lado*/
-header {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    justify-content: space-around;
-    /*Coloca o primeiro elemento de um lado e o segundo do outro*/
-    padding: 10px 20px;
-
-}
-
 nav a {
     display: flex;
     text-decoration: none;
@@ -89,7 +78,7 @@ article {
     gap: 15px;
 }
 
-.redes-socias a:hover {
+.redes-sociais a:hover {
     color: var(--cor-secundaria);
 }
 
