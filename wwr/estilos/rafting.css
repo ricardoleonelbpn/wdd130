@@ -6,18 +6,18 @@
     --fonte-body: Arial, Helvetica, sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
     justify-content: space-around;
     padding: 10px 20px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -75,10 +75,6 @@ article {
     height: auto;
 }
 
-.redes-sociais a:hover {
-    color: var(--cor-secundaria);
-}
-
 .hero {
     position: relative;
     width: 100%;
@@ -96,7 +92,6 @@ article {
     top: 20px;
     width: 100%;
     padding: 16px;
-    text-align: center;
     opacity: 0.85;
     background-color: var(--cor-principal);
     color: #fff;
@@ -113,7 +108,6 @@ article {
 
 .hero h2 {
     margin: 20px 0;
-    text-align: center;
     color: var(--cor-principal);
 }
 
@@ -142,7 +136,7 @@ section {
 }
 
 .cta h2 {
-    color: #fff
+    color: #fff;
 }
 
 .cta figure img {
@@ -158,6 +152,8 @@ main {
     width: 100%;
     margin: 0 auto;
 }
+
+/* Página de contato */
 
 .contato {
     text-align: center;
@@ -318,6 +314,7 @@ form button:hover {
 }
 
 /* Seção da equipe na página de contato */
+
 main > section:has(.cta figure img[src*="foto_perfil"]) {
     clear: both;
     width: 800px;
@@ -328,7 +325,8 @@ main > section:has(.cta figure img[src*="foto_perfil"]) {
     text-align: center;
 }
 
-/* Título da seção da equipe na página de contato */
+/* Título da seção da equipe */
+
 main > section:has(.cta figure img[src*="foto_perfil"]) > h2 {
     color: #000;
     font-family: var(--fonte-body);
@@ -363,12 +361,9 @@ main > section:has(.cta figure img[src*="foto_perfil"]) > .cta figcaption {
     font-size: 14px;
 }
 
-/* Configurações gerais para telas menores */
-@media screen and (max-width: 700px) {
-    main {
-        width: 100%;
-    }
+/* Configurações para telas menores */
 
+@media screen and (max-width: 700px) {
     .maps {
         float: none;
         margin: 0 auto 25px;
