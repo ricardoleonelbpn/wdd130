@@ -582,7 +582,6 @@ form a:hover {
     line-height: 1.6;
 }
 
-```css
 /* Tabela de resumo dos passeios */
 
 .resumo-passeios {
@@ -617,5 +616,3 @@ form a:hover {
 .resumo-passeios tbody tr:nth-child(even) {
     background-color: #eeeeee;
 }
-
-```
