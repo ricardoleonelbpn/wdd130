@@ -407,3 +407,177 @@ body:has(form) main {
     font-weight: bold;
     line-height: 19px;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.grid img {
+    max-width: 100%;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.grid aside {
+    padding: 20px;
+}
+
+.form-inicial {
+    margin: 0 auto;
+}
+
+form a {
+    display: flex;
+    text-decoration: none;
+    color: #000;
+}
+
+form a:hover {
+    color: var(--cor-secundaria)
+}
+
+.link-passeios {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-inicial {
+    margin: 20px auto 0;
+}
+
+/* Página de Passeios */
+
+.passeios-intro {
+    max-width: 840px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.passeios-intro h1 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-destaque1);
+}
+
+.passeios-intro p {
+    font-family: var(--fonte-body);
+    line-height: 1.6;
+}
+
+/* Organização dos passeios */
+
+.lista-passeios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Cada passeio */
+
+.passeio {
+    text-align: center;
+    font-family: var(--fonte-body);
+}
+
+/* Imagens padronizadas */
+
+.passeio > img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Título sobre a imagem */
+
+.passeio-conteudo h2 {
+    margin: 0;
+    padding: 12px 8px;
+    background-color: var(--cor-principal);
+    color: #fff;
+    font-family: var(--fonte-titulo);
+    font-size: 22px;
+}
+
+/* Textos abaixo da imagem e do título */
+
+.passeio-conteudo p {
+    text-align: center;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+.passeio-conteudo ul {
+    display: inline-block;
+    text-align: left;
+    line-height: 1.8;
+    padding-left: 20px;
+    margin: 10px auto 20px;
+}
+
+/* Botões */
+
+.botao-passeio {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 10px 0 20px;
+    background-color: var(--cor-secundaria);
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-family: var(--fonte-body);
+}
+
+.botao-passeio:hover {
+    opacity: 0.85;
+}
+
+/* Convite final */
+
+.convite-passeios {
+    text-align: center;
+    max-width: 840px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: var(--fonte-body);
+}
+
+.convite-passeios h2 {
+    font-family: var(--fonte-titulo);
+}
+
+/* Adaptação para telas menores */
+
+@media (max-width: 800px) {
+    .lista-passeios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .lista-passeios {
+        grid-template-columns: 1fr;
+    }
+
+    .passeio > img {
+        height: 250px;
+    }
+}
+
+.passeios-intro p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
