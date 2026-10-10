@@ -581,3 +581,41 @@ form a:hover {
     margin: 0 auto;
     line-height: 1.6;
 }
+
+```css
+/* Tabela de resumo dos passeios */
+
+.resumo-passeios {
+    max-width: 840px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: var(--fonte-body);
+}
+
+.resumo-passeios h2 {
+    text-align: center;
+    font-family: var(--fonte-titulo);
+}
+
+.resumo-passeios table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.resumo-passeios th,
+.resumo-passeios td {
+    border: 1px solid #555;
+    padding: 12px;
+    text-align: center;
+}
+
+.resumo-passeios th {
+    background-color: var(--cor-principal);
+    color: #000;
+}
+
+.resumo-passeios tbody tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+```
